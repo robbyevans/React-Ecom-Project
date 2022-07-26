@@ -8,6 +8,7 @@ import Footer from './Footer';
 
 function App() {
   const [itemList,setItemList]=useState([])
+  const [brandsList,setBrandsList]=useState([])
 
   useEffect(()=>{
     fetch('http://localhost:3000/mainData')
@@ -15,11 +16,16 @@ function App() {
       .then((items)=>setItemList(items))
     
   },[]);
+  useEffect(()=>{
+    fetch("http://localhost:3000/Brands")
+    .then((resp)=>resp.json())
+    .then((data)=>setBrandsList(data))
+  },[])
   return (
     <div className="App">
       <Banner/>
       <Body itemList={itemList}/>
-      <Brands/>
+      <Brands brandsList={brandsList}/>
       <Footer/>
       
     </div>

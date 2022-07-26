@@ -3,7 +3,6 @@ import Items from './Items'
 
 function ItemContainer({itemList}) {
 
-  console.log(itemList)
 
 
   return (

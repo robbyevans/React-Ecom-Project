@@ -353,6 +353,9 @@ background-color: var(--color-secondary);
   margin-bottom: 10px;
 }
 
+.item-price{
+  font-size: 18px;
+}
 /* <!-----------media query for screen size less than 600---> */
 
 @media screen and (max-width:600px) {

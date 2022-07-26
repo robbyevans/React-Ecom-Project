@@ -10,9 +10,9 @@ function Items({key,title,image,price}) {
     <div className="col-4">
         <img src={image}/>
         <h3>{key}</h3>
-        <h4>{title}</h4>
+        <h4 className='item-title'>{title}</h4>
         
-          <p>{price}</p>
+          <p className='item-price'>{price}</p>
          
         </div>
    
