@@ -3,18 +3,13 @@ import ItemContainer from './ItemContainer'
 import Filter from './Filter';
 
 
-function Body({itemList}) {
+function Body({itemList,newArray,pushItem}) {
 
-  const newArray=[]
+
   const [selectedCategory, setSelectedCategory] = useState("All");
 
 
-  function pushItem(item){
-    newArray.push(item)
-    console.log(newArray)
-    // setPushedItem(newArray)
-    // console.log(pushedItem)
-  }
+ 
 
 
   // setPushedItem(newArray)

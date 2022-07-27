@@ -1,17 +1,20 @@
+import { BrowserRouter, Route, Routes, NavLink } from "react-router-dom";
 import React,{useEffect,useState} from 'react';
-// import { BrowserRouter, Route, Routes, NavLink } from "react-router-dom";
 import '../App.css';
 import Banner from "./Banner"
 import Body from './Body'
 import Brands from './Brands';
 import Footer from './Footer';
 import Cart from './Cart'
+
 // import Filter from './Filter';
 
 
 function App() {
   const [itemList,setItemList]=useState([])
   const [brandsList,setBrandsList]=useState([])
+
+  const newArray=[]
 
 
 
@@ -29,15 +32,26 @@ function App() {
     .then((data)=>setBrandsList(data))
   },[]);
 
-  
+  function pushItem(item){
+    newArray.push(item)
+    console.log(newArray)
+    // setPushedItem(newArray)
+    // console.log(pushedItem)
+  }
 
   return (
     <div className="App">
+
       <Banner/>
-      <Body itemList={itemList} setItemList={setItemList}/>
+
+      <Body
+       itemList={itemList} 
+       setItemList={setItemList}
+       newArray={newArray} 
+       pushItem={pushItem}/>
       <Brands brandsList={brandsList}/>
       <Footer/>
-      {/* <Cart/> */}
+      <Cart newArray={newArray}/>
       
     </div>
   );

@@ -12,7 +12,7 @@ function Banner() {
           <h1>AGROCHEM</h1>
           <h2>Everything Farming </h2>
           <p>All your farm Chemicals & Equipments in one place  </p>
-          <a href="#explore"class='btn'>Expore Now &#10142; </a>
+          <a href="#products"class='btn'>Expore Now &#10142; </a>
         </div>
        
       </div>

@@ -1,10 +1,11 @@
 import React,{useState,useEffect} from 'react'
 import NavBar from './NavBar'
 
-function Cart({pushedItems}) {
+function Cart({newArray}) {
 
   return (
     <div>
+      <h1>Hello world</h1>
       <NavBar/>
       <div className="small-container cart-page"></div>
       <table>
@@ -14,7 +15,7 @@ function Cart({pushedItems}) {
           <th>quantity</th>
           <th>subtotal</th>
         </tr>
-        {pushedItems.map(item=>{
+        {newArray.map(item=>{
           <tr className='pushed-item'>
             <td>
               <div className='cart-info'>
