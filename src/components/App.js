@@ -51,7 +51,7 @@ function App() {
        pushItem={pushItem}/>
       <Brands brandsList={brandsList}/>
       <Footer/>
-      <Cart newArray={newArray}/>
+      {/* <Cart newArray={newArray}/> */}
       
     </div>
   );
