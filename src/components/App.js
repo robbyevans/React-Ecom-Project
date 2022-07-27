@@ -1,10 +1,12 @@
 import React,{useEffect,useState} from 'react';
+// import { BrowserRouter, Route, Routes, NavLink } from "react-router-dom";
 import '../App.css';
 import Banner from "./Banner"
 import Body from './Body'
 import Brands from './Brands';
 import Footer from './Footer';
-import Filter from './Filter';
+import Cart from './Cart'
+// import Filter from './Filter';
 
 
 function App() {
@@ -32,10 +34,10 @@ function App() {
   return (
     <div className="App">
       <Banner/>
-      
       <Body itemList={itemList} setItemList={setItemList}/>
       <Brands brandsList={brandsList}/>
       <Footer/>
+      {/* <Cart/> */}
       
     </div>
   );

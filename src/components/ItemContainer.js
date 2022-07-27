@@ -1,7 +1,9 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Items from './Items'
 
-function ItemContainer({itemsToDisplay}) {
+function ItemContainer({itemsToDisplay,newArray,pushItem}) {
+
+  
 
 
 
@@ -16,6 +18,8 @@ function ItemContainer({itemsToDisplay}) {
       title={item.title}
       image={item.image}
       price={item.price}
+      newArray={newArray}
+      pushItem={pushItem}
       />
      })
      }

@@ -1,8 +1,21 @@
-import React,{useState,useEffect} from 'react'
+import React from 'react'
 
 
-function Items({key,title,image,price}) {
-  // const{id,title,image,price}=item;
+function Items({key,title,image,price,pushItem}) {
+  // const{title,image,price}=item;
+  
+
+  
+  function handleAddToCart(){
+    const data=({
+      "image":image,
+      "title":title,
+      "price":price
+      
+    })
+    pushItem(data)
+   
+  }
 
 
 
@@ -13,6 +26,7 @@ function Items({key,title,image,price}) {
         <h4 className='item-title'>{title}</h4>
         
           <p className='item-price'>{price}</p>
+          <btn className="btn" onClick={handleAddToCart}>Add to cart</btn>
          
         </div>
    

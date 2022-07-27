@@ -2,11 +2,13 @@ import React from 'react'
 
 function NavBar() {
 
+  
+
   return (
     <div className='nav-bar'>
         <nav>
           <ul id="menuItems">
-            <li><a id="goBack" href="./index.html">Home</a></li>
+            <li><a id="goBack" href="./">Home</a></li>
             <li><a  href="#products">Products</a></li>
             <li><a  href="#contact">Contact</a></li>
           </ul>
