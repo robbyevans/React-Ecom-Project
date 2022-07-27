@@ -1,7 +1,7 @@
 import React from 'react'
 import Items from './Items'
 
-function ItemContainer({itemList}) {
+function ItemContainer({itemsToDisplay}) {
 
 
 
@@ -10,7 +10,7 @@ function ItemContainer({itemList}) {
   
    <div id="products" className="row">
 
-     {itemList.map(item=>{
+     {itemsToDisplay.map(item=>{
       return <Items 
       key={item.id}
       title={item.title}

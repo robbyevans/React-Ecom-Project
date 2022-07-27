@@ -11,8 +11,8 @@ function NavBar() {
             <li><a  href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <img src="" alt=""/>
-        <img className="menu-icon" src="../public/images/menu.png" onClick="menutoggle()"/>
+        {/* <img src="" alt=""/>
+        <img className="menu-icon" src="../public/images/menu.png" onClick="menutoggle()"/> */}
     </div>
   )
 }

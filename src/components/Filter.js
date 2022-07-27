@@ -1,15 +1,24 @@
 import React from 'react'
 
-function Filter({onCategoryChange}) {
+function Filter({handleCategoryChange}) {
+  
+
+ 
+
+
+
   return (
-    <select name="filter" onChange={onCategoryChange}>
-          <option value="All">Filter by category</option>
-          <option value="Produce">Fertilizer</option>
-          <option value="Dairy">Herbicides</option>
-          <option value="Dessert">Pesticides</option>
-          <option value="Dessert"></option>
-          <option value="Dessert">Pesticides</option>
-        </select>
+    <div class="filter-wrapper">
+      <select  className="filter"  onChange={handleCategoryChange}>
+            <option value="All">Filter by category</option>
+            <option value="fertilizer">Fertilizer</option>
+            <option value="Herbicide">Herbicides</option>
+            <option value="pesticide">Pesticides</option>
+            <option value="multi-vitamin">Multi-vitamins</option>
+            <option value="machinery">Machinery</option>
+      </select>
+       {/* <btn className="filter-btn" >Search</btn> */}
+    </div>
   )
 }
 
