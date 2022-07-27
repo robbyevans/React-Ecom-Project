@@ -4,6 +4,7 @@ import Banner from "./Banner"
 import Body from './Body'
 import Brands from './Brands';
 import Footer from './Footer';
+import Filter from './Filter';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
   return (
     <div className="App">
       <Banner/>
+      <Filter itemList={itemList}/>
       <Body itemList={itemList}/>
       <Brands brandsList={brandsList}/>
       <Footer/>

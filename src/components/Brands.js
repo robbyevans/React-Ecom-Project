@@ -7,14 +7,11 @@ function Brands({brandsList}) {
       <div className="row">
         {brandsList.map(brand=>{
           return<div className="col-5">
-            <image id={brand.id} src={brand.image} alt=""></image>
+            <img key={brand.id} src={brand.image} alt=""/>
           </div>
         })}
-          
       </div>
-
       </div>
-
     </div>
   )
 }
