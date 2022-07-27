@@ -5,7 +5,7 @@ import Banner from "./Banner"
 import Body from './Body'
 import Brands from './Brands';
 import Footer from './Footer';
-import Cart from './Cart'
+import Comment from "./Comment";
 
 // import Filter from './Filter';
 
@@ -50,6 +50,7 @@ function App() {
        newArray={newArray} 
        pushItem={pushItem}/>
       <Brands brandsList={brandsList}/>
+      <Comment/>
       <Footer/>
       {/* <Cart newArray={newArray}/> */}
       
