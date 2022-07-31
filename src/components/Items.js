@@ -26,7 +26,7 @@ function Items({key,title,image,price,pushItem}) {
         <h3>{key}</h3>
         <h4 className='item-title'>{title}</h4>
         
-          <p className='item-price'>{price}</p>
+          <p className='item-price'>Ksh {price}</p>
           <btn className="btn" onClick={handleAddToCart}>Add to cart</btn>
          
         </div>
