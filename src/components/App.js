@@ -42,7 +42,7 @@ function App() {
   return (
     <div className="App">
 
-      <Banner/>
+      <Banner newArray={newArray}/>
 
       <Body
        itemList={itemList} 

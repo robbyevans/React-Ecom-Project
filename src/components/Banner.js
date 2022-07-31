@@ -2,11 +2,11 @@ import React from 'react'
 import NavBar from './NavBar'
 
 
-function Banner() {
+function Banner({newArray}) {
   return (
     <div className='header'>
       <div className='container'>
-        <NavBar/>
+        <NavBar newArray={newArray}/>
         <div class="col-2 row row-1 " >
         <div class=" col-header">
           <h1>AGROCHEM</h1>

@@ -3,20 +3,22 @@ import NavBar from './NavBar'
 
 function Cart({newArray}) {
 
+  console.log(newArray)
   return (
-    <div>
-      <h1>Hello world</h1>
-      <NavBar/>
-      <div className="small-container cart-page"></div>
-      <table>
-        <tr>
-          <th></th>
-          <th>Product</th>
-          <th>quantity</th>
-          <th>subtotal</th>
+    <div className='cart-box'>
+      <h1>Hello iam cart</h1>
+
+      {/* <div className= 'cart-page'></div> */}
+      <table className='cart-table'>
+        <tr className='row-1'>
+          <th id='th-0'>...</th>
+          <th id='th-1'>Product</th>
+          <th id='th-2'>quantity</th>
+          <th id='th-3'>subtotal</th>
         </tr>
+
         {newArray.map(item=>{
-          <tr className='pushed-item'>
+          return<tr className='pushed-item'>
             <td>
               <div className='cart-info'>
                 <img src={item.image}></img>
@@ -27,11 +29,15 @@ function Cart({newArray}) {
               <td><input  type="number"></input></td>
               <td>{item.price}</td>
           </tr>
-        })}
+         
+        }
+        
+        )}
 
       </table>
     </div>
   )
-}
 
-export default Cart
+
+  }
+  export default Cart

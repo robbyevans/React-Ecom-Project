@@ -22,8 +22,11 @@ html {
   display: flex;
   align-items: center;
   padding: 20px;
- 
-
+}
+.cart{
+  height: 30px;
+  width: 30px;
+  margin-right: -35px;
 }
 nav{
   flex: 1;
@@ -291,12 +294,19 @@ ul{
   
   nav ul li{
     display: block;
-    margin-right: 50px;
+    margin-right: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+   
+  }
+  .cart{
+    margin-top: 100px;
+    margin-right:10px;
+   
   }
   nav ul li a{
     color: var(--color-accent);
+    border-bottom:solid 1px black;
   }
   .menu-icon{
     display:block;
@@ -397,6 +407,52 @@ background-color: var(--color-secondary);
   box-shadow: 0px 2px 12px 1px rgba(0,0,0,0.5);
   cursor: pointer;
 }
+.cart-box{
+  border: 1px solid red;
+  position: absolute;
+  width: 33%;
+  
+
+
+}
+/* .cart-page{
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border: 2px solid red;
+}
+.cart-box{
+  position: absolute;
+  z-index: 9;
+  height: 100px;
+  width: 100px;
+  border: 1px solid blue;
+  margin-right: 0;
+}
+.cart-table{
+  height: 50px;
+  width: 50px;
+
+}
+.row-1{
+height: 50px;
+width: 70px;
+}
+#th-0{
+  height: 10px;
+}
+.pushed-item{
+ border:2px solid red;
+}
+.red-box{
+  background-color: red;
+  height: 30px;
+  width: 30px;
+}
+.cart-img{
+  width: 20px;
+  height: 20px;
+} */
 /* <!-----------media query for screen size less than 600---> */
 
 @media screen and (max-width:600px) {

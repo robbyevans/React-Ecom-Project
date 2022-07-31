@@ -14,6 +14,7 @@ function Items({key,title,image,price,pushItem}) {
       
     })
     pushItem(data)
+
    
   }
 
@@ -26,7 +27,7 @@ function Items({key,title,image,price,pushItem}) {
         <h4 className='item-title'>{title}</h4>
         
           <p className='item-price'>{price}</p>
-          {/* <btn className="btn" onClick={handleAddToCart}>Add to cart</btn> */}
+          <btn className="btn" onClick={handleAddToCart}>Add to cart</btn>
          
         </div>
    
