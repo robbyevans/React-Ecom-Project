@@ -36,10 +36,12 @@ function App() {
   function pushItem(item){
     newArray.push(item)
     console.log(newArray)
+    
     // setPushedItem(newArray)
     // console.log(pushedItem)
 
   }
+  
   // setNewArray(newArray)
 
   return (
@@ -53,7 +55,7 @@ function App() {
         
        pushItem={pushItem}/>
       <Brands brandsList={brandsList}/>
-      <Comment/>
+      {/* <Comment/> */}
       <Footer/>
       {/* <Cart newArray={newArray}/> */}
       

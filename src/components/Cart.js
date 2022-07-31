@@ -11,7 +11,10 @@ function Cart({newArray}) {
   //   console.log(updatedArray)
   // })
   
+  function handleDelete(event){
+    
 
+  }
 
  function handleChange(event){
      
@@ -46,8 +49,10 @@ function Cart({newArray}) {
               </td>
           
                 <td className='t-data'>{item.title}</td>
-                <td  className='t-data'><input className='cart-input' type="number" onChange={handleChange} ></input></td>
-                <td  className='cart-price'>{item.price*(subtotal)}</td>
+                {/* <td  className='t-data'><input className='cart-input' type="number" onChange={handleChange} ></input></td> */}
+                <td className='t-data'>Unit price {item.price}</td>
+                <td  className='cart-price'>Total {item.price}</td>
+                
             </tr>
          
         }
