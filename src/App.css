@@ -410,10 +410,40 @@ background-color: var(--color-secondary);
 .cart-box{
   border: 1px solid red;
   position: absolute;
-  width: 33%;
-  
+  width: 400px;
+  margin-left: -100px;
+ 
 
+  margin-right: 50px;
+}
+.pushed-item{
+  height: 30px;
+  width: 100%;
+  background-color:var(--color-primary);
+}
+.cart-img{
+  height: 50px;
+  width: 50px;
+}
+.t-data{
+text-align: center;
+}
+.cart-input{
+  width: 50px;
+  margin-right: 10px;
+}
+.cart-price{
+  padding-right: 10px;
+}
+.cart-table{
 
+}
+.t-head{
+  text-align: center;
+  background-color: var(--color-body);
+}
+.cart-table td{
+  border:3px solid var(--color-secondary);
 }
 /* .cart-page{
   position: absolute;

@@ -2,37 +2,48 @@ import React,{useState,useEffect} from 'react'
 import NavBar from './NavBar'
 
 function Cart({newArray}) {
+  const [subtotal,setSubtotal]=useState(1)
 
-  console.log(newArray)
+
+  function handleChange(event){
+    event.preventDefault()
+    
+     setSubtotal(event.target.value)
+  }
+
   return (
     <div className='cart-box'>
-      <h1>Hello iam cart</h1>
+ 
 
-      {/* <div className= 'cart-page'></div> */}
+
       <table className='cart-table'>
-        <tr className='row-1'>
-          <th id='th-0'>...</th>
-          <th id='th-1'>Product</th>
-          <th id='th-2'>quantity</th>
-          <th id='th-3'>subtotal</th>
-        </tr>
-
-        {newArray.map(item=>{
-          return<tr className='pushed-item'>
-            <td>
-              <div className='cart-info'>
-                <img src={item.image}></img>
-              </div>
-            </td>
-            
-              <td>{item.title}{item.price}</td>
-              <td><input  type="number"></input></td>
-              <td>{item.price}</td>
+        <thead className='t-head'>
+          <tr className='row-1'>
+            <th id='th-0'>...</th>
+            <th id='th-1'>Product</th>
+            <th id='th-2'>quantity</th>
+            <th id='th-3'>subtotal</th>
           </tr>
+        </thead>
+
+        <tbody>
+          {newArray.map(item=>{
+            return<tr className='pushed-item'>
+              <td className='t-data'>
+                <div className='cart-info'>
+                  <img className='cart-img' src={item.image}></img>
+                </div>
+              </td>
+          
+                <td className='t-data'>{item.title}</td>
+                <td  className='t-data'><input className='cart-input' type="number" onChange={handleChange} ></input></td>
+                <td  className='cart-price'>{item.price*(subtotal)}</td>
+            </tr>
          
         }
         
         )}
+        </tbody>
 
       </table>
     </div>
