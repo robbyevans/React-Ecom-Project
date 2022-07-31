@@ -6,7 +6,7 @@
 
 ## Description
 
--Agrochem is simple react web-application containing a list of agrochemical farm products.It consist of a single landing page made up of a header section,body section,brand section,footer and cart.
+-React-Ecom-Project is simple react web-application containing a list of agrochemical farm products.It consist of a single landing page made up of a header section,body section,brand section,footer and cart.
 
 - This is built by single contributor by the name Evans Rutto.
 
