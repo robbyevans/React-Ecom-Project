@@ -126,9 +126,9 @@ height: 50vh;
 .header .row{
   margin-top: 70px;
 }
-.btn:hover{
+/* .btn:hover{
   background: var(--color-secondary);
-}
+} */
 .cartegories{
   margin: 70px 0;
 
@@ -312,6 +312,7 @@ ul{
     display:block;
     cursor: pointer;
   }
+  
 }
 
 .comment-row{

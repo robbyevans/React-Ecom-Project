@@ -4,12 +4,12 @@ import NavBar from './NavBar'
 function Cart({newArray}) {
   const [subtotal,setSubtotal]=useState(1)
 
-  const[updatedArray,setUpdatedArray]=useState(newArray)
+  const[updatedArray,setUpdatedArray]=useState([])
 
- useEffect(()=>{
-  setUpdatedArray(newArray)
-  console.log(updatedArray)
- })
+  // setUpdatedArray(newArray)
+  // useEffect(()=>{
+  //   console.log(updatedArray)
+  // })
   
 
 
