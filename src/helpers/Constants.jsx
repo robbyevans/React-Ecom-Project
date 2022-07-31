@@ -1,0 +1,1 @@
+export const JSON_API ="https://react-ecom-project.herokuapp.com/api"
