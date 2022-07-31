@@ -6,12 +6,12 @@
 
 ## Description
 
--Agrochem is simple react web-application containing a list of agrochemical farm products.It consist of a single landing page made up of a header section,body section,brand section and a footer.
+-Agrochem is simple react web-application containing a list of agrochemical farm products.It consist of a single landing page made up of a header section,body section,brand section,footer and cart.
 
 - This is built by single contributor by the name Evans Rutto.
 
 - live link can be found at
-  https://robbyevans.github.io/Agro-chem-ecom-project/
+  https://github.com/robbyevans/React-Ecom-Project
 
 ### Screenshot
 
@@ -23,7 +23,7 @@
 ## setup/installation
 
 1.clone this repo into your pc.
-src=(git@github.com:robbyevans/Agro-chem-ecom-project.git)
+https://github.com/robbyevans/React-Ecom-Project
 
 2.open the repository containing the files cloned in vscode.
 
@@ -35,7 +35,7 @@ This will start the local server from the json file.
 
 4.run npm start to start the react application
 
-This project is a single page website with the exception of the checkout page,adding of selected elements to cart and payment system.
+This project is a single page website.
 
 ## Technology used
 
@@ -45,6 +45,8 @@ This project is a single page website with the exception of the checkout page,ad
 
 - The data from the json file is then fetched using the fetch keyword in JavaScript and converted to useable data before being rendered to the DOM.
   While fetching the data a GET request is performed on the local API and a response is delivered hence data from our json file is successfully renered in the DOM.
+- The web application also features use of React useStates,UseEffect hooks as well as react Routers to render the cart page, as well as toggling between items using the drop down filter.
+-
 
 ## contact and Support
 
