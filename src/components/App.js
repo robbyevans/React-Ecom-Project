@@ -5,9 +5,8 @@ import Banner from "./Banner"
 import Body from './Body'
 import Brands from './Brands';
 import Footer from './Footer';
-import Comment from "./Comment";
 
-// import Filter from './Filter';
+
 
 
 function App() {

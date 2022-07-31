@@ -308,10 +308,16 @@ ul{
     color: var(--color-accent);
     border-bottom:solid 1px black;
   }
-  .menu-icon{
-    display:block;
-    cursor: pointer;
+  .cart-box{
+    position: absolute;
+    z-index: 10;
+    border:1px solid red;
+    height: 400px;
   }
+  .cart-icon{
+    display: none;
+  }
+
   
 }
 
@@ -446,6 +452,7 @@ text-align: center;
 }
 .cart-table td{
   border:3px solid var(--color-body);
+  border-collapse: collapse;
 }
 /* .cart-page{
   position: absolute;

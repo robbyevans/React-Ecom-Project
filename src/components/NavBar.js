@@ -18,7 +18,7 @@ function NavBar({newArray}) {
             <li><a id="goBack" href="./">Home</a></li>
             <li><a  href="#products">Products</a></li>
             <li><a  href="#contact">Contact</a></li>
-            <li><img onClick={handleClick} className='cart' src='./images/cart.png'></img></li>
+            <li className='cart-icon'><img onClick={handleClick} className='cart' src='./images/cart.png'></img></li>
             {isTrue ? <Cart newArray={newArray}  /> : null}
           </ul>
         </nav>
