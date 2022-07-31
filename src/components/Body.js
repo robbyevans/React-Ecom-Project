@@ -3,7 +3,7 @@ import ItemContainer from './ItemContainer'
 import Filter from './Filter';
 
 
-function Body({itemList,newArray,pushItem}) {
+function Body({itemList,pushItem}) {
 
 
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -48,7 +48,7 @@ function Body({itemList,newArray,pushItem}) {
 <div>
 <Filter handleCategoryChange={handleCategoryChange}/>
   <div className="small-container">
-    <ItemContainer itemsToDisplay={itemsToDisplay} newArray={newArray} pushItem={pushItem}/>
+    <ItemContainer itemsToDisplay={itemsToDisplay}  pushItem={pushItem}/>
   </div>
 </div>
   )

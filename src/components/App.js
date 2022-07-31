@@ -13,6 +13,7 @@ import Comment from "./Comment";
 function App() {
   const [itemList,setItemList]=useState([])
   const [brandsList,setBrandsList]=useState([])
+  const [nwArray,setNewArray]=useState([])
 
   const newArray=[]
 
@@ -37,7 +38,9 @@ function App() {
     console.log(newArray)
     // setPushedItem(newArray)
     // console.log(pushedItem)
+
   }
+  // setNewArray(newArray)
 
   return (
     <div className="App">
@@ -47,7 +50,7 @@ function App() {
       <Body
        itemList={itemList} 
        setItemList={setItemList}
-       newArray={newArray} 
+        
        pushItem={pushItem}/>
       <Brands brandsList={brandsList}/>
       <Comment/>

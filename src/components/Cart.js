@@ -4,15 +4,24 @@ import NavBar from './NavBar'
 function Cart({newArray}) {
   const [subtotal,setSubtotal]=useState(1)
 
+  const[updatedArray,setUpdatedArray]=useState(newArray)
 
-  function handleChange(event){
-    event.preventDefault()
-    
-     setSubtotal(event.target.value)
-  }
+ useEffect(()=>{
+  setUpdatedArray(newArray)
+  console.log(updatedArray)
+ })
+  
 
-  return (
-    <div className='cart-box'>
+
+ function handleChange(event){
+     
+     
+   event.preventDefault()
+   
+    setSubtotal(event.target.value)
+ }
+ return (
+   <div className='cart-box'>
  
 
 
@@ -28,6 +37,7 @@ function Cart({newArray}) {
 
         <tbody>
           {newArray.map(item=>{
+
             return<tr className='pushed-item'>
               <td className='t-data'>
                 <div className='cart-info'>
