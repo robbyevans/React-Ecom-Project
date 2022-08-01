@@ -20,14 +20,14 @@ function App() {
 
 
   useEffect(()=>{
-    fetch('http://localhost:3000/mainData')
+    fetch('https://wakeful-steadfast-botany.glitch.me/mainData')
       .then((resp)=>resp.json())
       .then((items)=>setItemList(items))
     
 
   },[]);
   useEffect(()=>{
-    fetch("http://localhost:3000/Brands")
+    fetch("https://wakeful-steadfast-botany.glitch.me/Brands")
     .then((resp)=>resp.json())
     .then((data)=>setBrandsList(data))
   },[]);
