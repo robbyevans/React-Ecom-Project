@@ -11,7 +11,7 @@
 - This is built by single contributor by the name Evans Rutto.
 
 - live link can be found at
-  https://github.com/robbyevans/React-Ecom-Project
+  https://react-ecom-project.herokuapp.com/
 
 ### Screenshot
 
@@ -23,7 +23,8 @@
 ## setup/installation
 
 1.clone this repo into your pc.
-https://github.com/robbyevans/React-Ecom-Project
+
+`git clone https://github.com/robbyevans/React-Ecom-Project.git`
 
 2.open the repository containing the files cloned in vscode.
 
